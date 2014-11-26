@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mobile</title>
+
+	
+	
+	<link rel="stylesheet" href="css/estructura.css">
+	<link rel="stylesheet" href="css/ramiro.css">
+	<link rel="stylesheet" href="css/icons.min.css">
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+	<script type="text/javascript" >
+		var r=new Array();
+
+
+		$(document).ready(function() {
+
+			$.mobile.defaultPageTransition='slide';
+
+
+
+			$("#Componente_Boton").on("click","#rr", function(){
+
+				
+			})
+
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+	<section id="Inicio" data-role="page" data-theme="b">
+		<header data-role="header">
+			<h1>Componentes de JQuery Mobile</h1>
+		</header><!-- /header -->
+		<article data-role="content">
+
+			<ul data-role="listview">
+				<li><a href="#Componente_Boton" data-transition="flip">Botones</a></li>
+				<li><a href="#Componente_ListView">ListView</a></li>
+				<li><a href="#Sistema_Grid">Grid</a></li>
+				<li><a href="#Select_menu">Select menu</a></li>
+				
+			</ul>
+		</article><!-- /content -->
+		<footer data-role="footer" data-position="fixed">
+			<h1>Curso de Jquery Mobile</h1>
+		</footer><!-- /footer -->
+	</section><!-- /page -->
+	<section id="Componente_Boton" data-role="page">
+		<header data-role="header">
+			<h1>Componente Boton</h1>
+		</header><!-- /header -->
+		<article data-role="content">
+
+			<a href="#Inicio" class="ui-btn" data-icon="arrow-r">Inicio</a>
+			<div data-role="controlgroup" data-type="horizontal">
+				<a id="rr" href="#" data-role="button" data-icon="arrow-r">button1</a>
+				<a href="#" data-role="button" data-icon="arrow-r">button2</a>
+				<a href="#" data-role="button" data-icon="arrow-r">button3</a>
+			</div>
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<a href="#" class="ui-btn ui-btn-inline ui-btn-a">bonto 1</a>
+			<a href="#" class="ui-btn ui-btn-inline ui-btn-b">bonto 2</a>
+			<a href="#" class="ui-btn ui-btn-inline ui-btn-c">bonto 2</a>
+			<a href="#" class="ui-btn ui-btn-inline ui-btn-b ui-mini">bonto 2</a>
+			<a href="#" class="ui-btn ui-icon-search ui-btn-icon-left">buscar</a>
+			<a href="#" class="ui-btn ui-icon-search ui-btn-icon-top">Top</a>
+			<a href="#" class="ui-btn ui-icon-search ui-btn-icon-right">Right</a>
+			<a href="#" class="ui-btn ui-icon-search ui-btn-icon-bottom">Bottom</a>
+			<a href="#" class="ui-btn ui-icon-search ui-btn-icon-left">Left</a>
+			<a href="#" class="ui-btn ui-icon-search ui-btn-icon-notext">Search</a>
+			<a href="#anylink" class="ui-btn ui-icon-search ui-btn-icon-left">With circle (default)</a>
+			<a href="#anylink" class="ui-btn ui-icon-search ui-btn-icon-left ui-nodisc-icon">Without circle</a>
+			<a href="#anylink" class="ui-btn ui-icon-search ui-btn-icon-left">White</a>
+			<a href="#anylink" class="ui-btn ui-icon-search ui-btn-icon-left ui-alt-icon">Black</a>
+		</article><!-- /content -->
+		<footer data-role="footer" data-position="fixed">
+			<h1>Curso de Jquery Mobile</h1>
+			<a href="#Inicio" data-role="button">ir a home</a>
+		</footer><!-- /footer -->
+	</section><!-- /page -->
+	<section id="pag2" data-role="page" >
+		<header data-role="header" >
+			<h1>Header</h1>
+		</header><!-- /header -->
+		<article data-role="content">
+			<a href="#pag1" data-role="button">button1</a>
+			<a href="#" class="ui-btn ui-btn-inline">Anchor</a>
+			<button class="ui-btn ui-btn-inline ui-btn-b">Button</button>
+			<a href="#dialogo" class="ui-btn ui-mini">Anchor</a>
+		</article><!-- /content -->
+		<footer data-role="footer" data-position="fixed">
+			<h1>Footer</h1>
+		</footer><!-- /footer -->
+	</section><!-- /page -->
+	<section id="dialogo" data-role="page" data-dialog="true">
+		<header data-role="header">
+			<h1>Header</h1>
+		</header><!-- /header -->
+		<article data-role="content">
+			<p>mi dialogo</p>
+		</article><!-- /content -->
+		<footer data-role="footer">
+			<h1>Footer</h1>
+		</footer><!-- /footer -->
+	</section><!-- /page -->
+
+
+	<section id="Componente_ListView" data-role="page">
+		<header data-role="header">
+			<h1>Componente ListView</h1>
+		</header><!-- /header -->
+		<article data-role="content">
+			<p>Lista solo lectura</p>
+			<ul data-role="listview">
+				<li>item1</li>
+				<li>item2</li>
+				<li>item3</li>
+			</ul>
+			<p>Lista solo lectura con numeros</p>
+
+			<ol data-role="listview">
+				    <li>Acura</li>
+				    <li>Audi</li>
+				    <li>BMW</li>
+				    <li>Cadillac</li>
+				    <li>Ferrari</li>
+			</ol>
+			<ul data-role="listview">
+				    <li><a href="#">Acura</a></li>
+				    <li><a href="#">Audi</a></li>
+				    <li><a href="#">BMW</a></li>
+				    <li><a href="#">Cadillac</a></li>
+				    <li><a href="#">Ferrari</a></li>
+			</ul>
+			<ul data-role="listview" data-inset="true">
+				    <li><a href="#">Acura</a></li>
+				    <li><a href="#">Audi</a></li>
+				    <li><a href="#">BMW</a></li>
+				    <li><a href="#">Cadillac</a></li>
+				    <li><a href="#">Ferrari</a></li>
+			</ul>
+			<ul data-role="listview" data-filter="true" data-filter-placeholder="escribe aqui lo que buscas" >
+				    <li><a href="#">Apple</a></li>
+				    <li><a href="#">Banana</a></li>
+				    <li><a href="#">Cherry</a></li>
+				    <li><a href="#">Cranberry</a></li>
+				    <li><a href="#">Grape</a></li>
+				    <li><a href="#">Orange</a></li>
+			</ul>
+
+			<ul data-role="listview" data-filter="true">
+				<li><a href="#">item1</a></li>
+				<li><a href="#">item2</a></li>
+				<li><a href="#">item3</a></li>
+			</ul>
+
+			<form class="ui-filterable">
+				    <input id="autocomplete-input" data-type="search" placeholder="Search fruits...">
+			</form>
+			<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-input="#autocomplete-input" >
+				    <li><a href="#">Apple</a></li>
+				    <li><a href="#">Banana</a></li>
+				    <li><a href="#">Cherry</a></li>
+				    <li><a href="#">Cranberry</a></li>
+				    <li><a href="#">Grape</a></li>
+				    <li><a href="#">Orange</a></li>
+			</ul>
+			<ul data-role="listview" data-divider-theme="b">
+				<li><a href="#">item1</a></li>
+				<li><a href="#">item2</a></li>
+				<li><a href="#">item3</a></li>
+				<li data-role="list-divider">nueva seccion</li>
+				<li><a href="#">item1</a></li>
+				<li><a href="#">item2</a></li>
+				<li><a href="#">item3</a></li>
+			</ul>
+			<ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true">
+				    <li><a href="index.html">Adam Kinkaid</a></li>
+				    <li><a href="index.html">Alex Wickerham</a></li>
+				    <li><a href="index.html">Avery Johnson</a></li>
+				    <li><a href="index.html">Bob Cabot</a></li>
+				    <li><a href="index.html">Caleb Booth</a></li>
+				    <li><a href="index.html">Christopher Adams</a></li>
+				    <li><a href="index.html">Culver James</a></li>
+			</ul>
+
+			<ul data-role="listview" data-count-theme="b">
+				<li><a href="#">item1<span class="ui-li-count">1</span></a></li>
+				<li><a href="#">item2<span class="ui-li-count">2</span></a></li>
+				<li><a href="#">item3<span class="ui-li-count">3</span></a></li>
+			</ul>
+			<ul data-role="listview" data-inset="true">
+				    <li><a href="#">
+					        <img src="">
+					    <h2>Broken Bells</h2>
+					    <p>Broken Bells</p></a>
+				    </li>
+				    <li><a href="#">
+					        <img src="">
+					    <h2>Warning</h2>
+					    <p>Hot Chip</p></a>
+				    </li>
+				    <li><a href="#">
+					        <img src="">
+					    <h2>Wolfgang Amadeus Phoenix</h2>
+					    <p>Phoenix</p></a>
+				    </li>
+			</ul>
+
+			
+
+			
+
+		</article><!-- /content -->
+		<footer data-role="footer" data-position="fixed">
+			<h1>Curso de Jquery Mobile</h1>
+		</footer><!-- /footer -->
+	</section><!-- /page -->
+
+
+
+	<section id="Sistema_Grid" data-role="page">
+		<header data-role="header">
+			<h1>Grid</h1>
+		</header><!-- /header -->
+		<article data-role="content">
+
+
+			
+
+			<div class="ui-grid-b">
+				<div class="ui-block-a">column1</div>
+				<div class="ui-block-b">column2</div>
+				<div class="ui-block-c">column3</div>
+			</div>
+
+
+		</article><!-- /content -->
+		<footer data-role="footer" data-position="fixed">
+			<h1>Curso de Jquery Mobile</h1>
+		</footer><!-- /footer -->
+	</section><!-- /page -->
+
+
+	<section id="Select_menu" data-role="page">
+		<header data-role="header">
+			<h1>Select_menu</h1>
+		</header><!-- /header -->
+		<article data-role="content"> 
+			<form>
+			<div class="ui-field-contain">
+			    <label for="select-native-1">Basic:</label>
+			    <select name="select-native-1" id="select-native-1">
+			        <option value="1">The 1st Option</option>
+			        <option value="2">The 2nd Option</option>
+			        <option value="3">The 3rd Option</option>
+			        <option value="4">The 4th Option</option>
+			    </select>
+			</div>
+			</form>
+		</article><!-- /content -->
+		<footer data-role="footer">
+			<h1>Curso de Jquery Mobile</h1>
+		</footer><!-- /footer -->
+	</section><!-- /page -->
+
+	
+</body>
+</html>
